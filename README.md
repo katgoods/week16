@@ -15,7 +15,7 @@
 
 Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the following questions based on the results:
 
-  1. Where is the company located: 
+  1. Where is the company located:
     - Sunnyvale, CA
 
   2. What is the NetRange IP address:
@@ -41,6 +41,8 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 
 Is Altoro Mutual vulnerable to XSS: 
   - Yes.
+  
+  
 
 ### Step 5: Zenmap
 
