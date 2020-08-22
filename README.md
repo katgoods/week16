@@ -40,23 +40,29 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 - Run the module. 
 
 Is Altoro Mutual vulnerable to XSS: 
+  - Yes.
 
 ### Step 5: Zenmap
 
 Your client has asked that you help identify any vulnerabilities with their file-sharing server. Using the Metasploitable machine to act as your client's server, complete the following:
 
 - Command for Zenmap to run a service scan against the Metasploitable machine: 
+  - nmap -T4 -A -v192.168.0.10
  
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
 
 - Zenmap vulnerability script command: 
+  - nmap --script samba-vuln-cve-2012-1182 192.168.0.10
 
 - Once you have identified this vulnerability, answer the following questions for your client:
   1. What is the vulnerability:
-
+    - SMB 3 (Samba)
+    
   2. Why is it dangerous:
+    - It allows the attacker to upload a shared library and have the server load and execute it. Complete impacts to the CIA triad (system files being shared, loss of system protection, totall shudown of affected source).
 
   3. What mitigation strategies can you recommendations for the client to protect their server:
+    - Block port 445
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
