@@ -30,6 +30,8 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 #### Step 3: Shodan
 
 - What open ports and running services did Shodan find:
+  - Open Ports: 80, 443, 8080
+  - Services: Apache Tomcat/Coyote JSP Engine (version 1.1)
 
 #### Step 4: Recon-ng
 
